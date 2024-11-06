@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>website</title>
+<script>
+function r()
+{
+var b=new Date();
+var h=b.getHours();
+var m=b.getMinutes();
+var s=b.getSeconds();
+var aop=" ";
+if(h>=12)
+aop="PM";
+else
+aop="AM";
+if(h>12)
+h=h-12;
+if(h==0)
+h=12;
+if(m<10)
+m="0"+m;
+if(s<10)
+s="0"+s;
+document.myform.date.value = h+":"+m+":"+s+" "+aop;
+setTimeout('r()',1000);
+}
+</script>
+</head>
+<body style="line-height:2" onLoad="r()" background="img/bg1.jpg">
+<img src="img/sxca_logo.png" style="position:absolute;top:5px;bottom:500px;left:10px;right:100px;height:110px;width:110px;"></img>
+<img src="tmg/gu_logo.png" style="position:absolute;top:5px;bottom:500px;left:1245px;right:20px;height:110px;width:110px;"></img>
+<h1 style=text-align:center;line-height:1;font-size:30;>
+<b><u>St. Xavier's COLLEGE</b></u><br>
+<i>AHMEDABAD<i><br>
+<i>GUJARAT</i>
+</h1><hr>
+<marquee style="color:white;font-size:20" direction="left"  bgcolor="black">
+<b>The College is managed by the Gujarat Province of Society of Jesus and is affiliated to Gujarat University.
+</b>
+</marquee><hr>
+<div style="font-size:25;color:BLUE;text-decoration:underline;text-align:center">
+Welcome To St. Xavier's College, Ahmedabad(GUJARAT)
+</div><br>
+<table border="2">
+<tr>
+<td><p style="font-size:20;white-space:pre;padding:10px;padding-right:200px;padding-left:10px;color:blue;">
+<b><i>MENU :-</i></b><hr>
+<button><b>COURSE</b></button><br><u>1.BCA </u><u>2.BCOM</u><br><u>3.BA </u><u>4.BTECH</u><br><u>5.BSC</u><br><br>
+<button><b>FACILITY</b></button><br><U>1.Internet Center         2.College Canteen<br>3.Teaching Staff        4.Play Ground<br>5.Hostal<br><br></U>
+<a href="pages/login.html"><button>LOGIN(only for members)</button></a><br><br>
+<a href="pages/register.html"><button>REGISTRATION(new users)</button></a><br><br>
+</p>
+</td>
+<td><div style="font-size:20;color:blue;text-align:justify;padding:10px"><span style="color:blue"><b><i>ABOUT :-</i></b><br></span>
+<ul style="color:black">
+<li>St. Xavier's College, founded in 1955, is the only grant-in-aid
+ Christian institution of higher education in Ahmedabad, Gujarat, India. It is run by the Society of Jesus.</li>
+</ul>
+<ul style="color:black">
+<li>Ranking for BCA. All India. #13 in 2019. State/City. Best among India Today ranked colleges in Gujarat in 2019.
+Ranking for Science. All India. #20 in 2019. State/City. Best among India Today ranked colleges in Gujarat in 2019</li>
+</ul>
+<ul style="color:black">
+<li>The college is affiliated to Gujarat University, Ahmedabad and recognized by the
+ University Grants Commission (UGC) under section 2(f) & 2(B) on 20th February 1980 under Act, 1956.
+</li>
+</ul>
+<ul style="color:black">
+<li>college is ranked with 5 star rating and 1st position by the state government. It's the best available option for the
+ students out there looking for best college for building up there carrier.</li>
+</ul>
+</td>
+</tr>
+</table>
+<div style="position:absolute;bottom:-127px;left:10px;font-size:20"><form name="myform">CURRENT TIME :-<input type="text" name="date">
+</div>
+<div style="position:absolute;bottom:-110px;left:458px;font-size:20;">
+CONTACT NO :
+</div>
+<div style="position:absolute;bottom:-110px;left:598px;font-size:20;color:red;">
+180010010011
+</div>
+<div style="position:absolute;bottom:-110px;left:790px;font-size:20;">
+ISSUED BY :-GOI
+</div>
+<div style="position:absolute;bottom:-110px;right:50px;font-size:20;text-align:justify;">VISIT :-<a href="https://sxca.edu.in/" style="color:red">https://sxca.edu.in/</a>
+</div>
+</body>
+</html>
+

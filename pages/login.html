@@ -1,0 +1,64 @@
+<html>
+<head>
+<script>
+function A()
+{
+var a=myform.id.value;
+var b=myform.pass.value;
+if(a=="student")
+{
+if(b=="student@123")
+{
+alert("login successfully ");
+}
+else
+alert("enter password is wrong");
+}
+else
+alert("something is wrong");
+}
+
+</script>
+</head>
+<body style="line-height:2" onLoad="r()" background="../img/bg2.jpg">
+<img src="../img/sxca_logo.png" style="position:absolute;top:5px;bottom:1000px;left:15px;right:600px;height:110px;width:110px;"></img>
+<img src="../img/gu_logo.png" style="position:absolute;top:5px;bottom:500px;left:1245px;right:100px;height:110px;width:110px;"></img>
+<h1 style=text-align:center;line-height:1;font-size:30;>
+<b><u>SAINT XVAIER'S COLLEGE</b></u><br>
+<i>AHMEDABAD<i><br>
+<i>GUJARAT</i>
+</h1><hr>
+<h2 style=text-align:center;line-height:1;font-size:20;font-face:verdana;>
+<b><u>Welcome To SXCA</u></b><br><b><u>Login Page</b></u><br><br><br>
+</h2>
+<form name="myform" onsubmit="return A()"><br><br>
+<div style="position:absolute;top:250px;left:470px;">
+<table border="2px solid" bgcolor="white">
+<tr>
+<td style="font-size:20;padding:10px">
+YOUR ID :
+</td>
+<td style="font-size:20;padding:10px"><input type="text" placeholder="Enter Your Name" name="id" autofocus>
+</td>
+</tr>
+<tr>
+<td style="font-size:20;padding:10px">
+ENTER YOUR PASSWORD
+</td>
+<td style="font-size:20;padding:10px">
+<input type="text" placeholder="Enter Your Password" name="pass">
+</td>
+</tr>
+<tr>
+<td style="font-size:20;padding:10px">
+<input type="button" value="SUBMIT"  onclick="A()" />
+</td>
+<td style="font-size:20;padding:10px">
+<input type="reset" value="CANCEL" name="reset" />
+</td>
+</tr>
+</table>
+</div>
+</form>
+</body>
+</html>

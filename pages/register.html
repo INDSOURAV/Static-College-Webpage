@@ -1,0 +1,145 @@
+<html>
+<head>
+<script>
+function r()
+{
+var b=new Date();
+var h=b.getHours();
+var m=b.getMinutes();
+var s=b.getSeconds();
+var aop=" ";
+if(h>11)
+aop="AM";
+else
+aop="PM";
+if(h>12)
+h=h-12;
+if(h==0)
+h=12;
+if(m<10)
+m="0"+m;
+if(s<10)
+s="0"+s;
+document.myform.date.value = h+":"+m+":"+s+" "+aop;
+setTimeout('r()',1000);
+}
+</script>
+</head>
+<body style="line-height:2" onLoad="r()">
+<img src="../img/sxca_logo.png" style="position:absolute;top:5px;bottom:500px;left:20px;right:100px;height:110px;width:110px;"></img>
+<img src="../img/gu_logo.png" style="position:absolute;top:5px;bottom:500px;left:1245px;right:100px;height:110px;width:110px;"></img>
+<h1 style=text-align:center;line-height:1;font-size:30;>
+<b><u>SAINT XVAIER'S COLLEGE</b></u><br>
+<i>AHMEDABAD<i><br>
+<i>GUJARAT</i>
+</h1><hr><hr>
+<h2 style=text-align:center;line-height:1;font-size:20;font-face:verdana;>
+<b><u>Welcome To SXCA</u></b><br><b><u>Registration Page</b></u><br><br><br>
+</h2>
+<body style background="../img/bg2.jpg">
+<form id="A" method="post">
+<table border="solid 2px" align="center" bgcolor="white">
+<tr>
+<td style="font-size:20;padding:10px">
+FIRST NAME :-
+</td>
+<td style="font-size:20;padding:10px">
+<input type="text"  placeholder="Enter Your First Name" autofocus><br><br>
+</td>
+<tr>
+<td style="font-size:20;padding:10px">
+LAST NAME :-
+</td>
+<td style="font-size:20;padding:10px">
+<input type="text"  placeholder="Enter Your Ser Name"><br><br>
+</td>
+<tr>
+<td style="font-size:20;padding:10px">
+FATHER'S  NAME :-
+</td>
+<td style="font-size:20;padding:10px"><input type="text"><br><br>
+</td>
+<tr>
+<td style="font-size:20;padding:10px">
+EMAIL ADDRESS :-
+</td>
+<td style="font-size:20;padding:10px">
+<input type="email" name="emailadd;ress"><br><br>
+</td>
+</tr>
+<tr>
+<td style="font-size:20;padding:10px">
+AGE :-
+</td>
+<td style="font-size:20;padding:10px">
+<input type="number" name="age" min="17"  max="20">  
+</td>
+</tr>
+<tr>
+<td style="font-size:20;padding:10px">
+GENDER :-
+</td> 
+<td style="font-size:20;padding:10px">
+<input type="radio" name="gender" value="male" checked> Male
+<input type="radio" name="gender" value="female"> Female
+<input type="radio" name="gender" value="other"> Other <br><br>
+</td>
+</tr>
+<tr>
+<td style="font-size:20;padding:10px">
+DOB :-
+</td>
+<td style="font-size:20;padding:10px">
+<input type="date" name="bdaydate"><br><br>
+</td>
+</tr>
+<tr>
+<td style="font-size:20;padding:10px">
+IMAGE :-</td>
+<td style="font-size:20;padding:10px"><input type="file" name="img"><br><br></td>
+</tr>
+<tr>
+<td style="font-size:20;padding:10px">HSC PERCENTAGE :-</td>
+<td style="font-size:20;padding:10px"><input type="number" min="75" max="max"><BR><BR></td></tr>
+<tr><td style="font-size:20;padding:10px">
+HSC MARKSHEET :-</td>
+<td style="font-size:20;padding:10px"><input type="file" name="img"></td>
+</tr>
+<tr><td style="font-size:20;padding:10px">
+SELECT COURSE :-</td><td style="font-size:20;padding:10px"><select id="COURSE" multiple>
+  <option value="BCA">BCA</option>
+  <option value="BCOM">BCOM</option>
+  <option value="BSC">BSC</option>
+  <option value="BA">BA</option>
+</select><BR><BR></td></tr><tr><td style="font-size:20;padding:10px">
+ADDRESS :-</td><td><br><textarea name="address" cols="60" rows="2" required="required">
+</textarea><br><br></td></tr>
+<tr><td style="font-size:20;padding:10px">
+CITY :-</td><td style="font-size:20;padding:5px"><input type="text"  required="required" ></td></tr>
+<tr>
+<td style="font-size:20;padding:10px">
+STATE :-</td>
+<td style="font-size:20;padding:5px"><input type="text"  required="required"><br><br></td><tr><td style="font-size:20;padding:5px">
+CONTACT NO :-</td><td style="font-size:20;padding:10px"><input type="no"  required="required" maxlenght="10" minlenght="10"><br><br></td></tr>
+<tr><td style="font-size:20;padding:10px">
+<input type="submit" name="submit" value="submit"></td>
+<td style="font-size:20;padding:10px"><input type="reset" name="reset" value="cancel"></td></tr>
+</form>
+</div>
+</table>
+<hr>
+<div style="position:absolute;bottom:-768px;left:10px;font-size:20"><form name="myform">CURRENT TIME :-<input type="text" name="date">
+</div>
+<div style="position:absolute;bottom:-750px;left:458px;font-size:20;">
+CONTACT NO :-
+</div>
+<div style="position:absolute;bottom:-750px;left:598px;font-size:20;color:red;">
+180010010011
+</div>
+<div style="position:absolute;bottom:-750px;left:790px;font-size:20;">
+ISSED BY :-GOI
+</div>
+<div style="position:absolute;bottom:-750px;right:50px;font-size:20;text-align:justify;">VISIT :-<a href="https://sxca.edu.in/" style="color:red">https://sxca.edu.in/</a>
+</div>
+</body>
+</html>
